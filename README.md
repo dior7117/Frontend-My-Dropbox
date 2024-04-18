@@ -1,47 +1,77 @@
-# Instruction how to send project to review
-- [Russian](https://github.com/bahtibek-an/Instruction-how-to-send-project-to-review/edit/main/README.md)
-# Frontend My Dropbox
-### What is dropbox could be a serverless app?
-This is what it's all about!
+# Link https://66166a6a8e97300d04194acc--beautiful-bublanina-1b5a0b.netlify.app/login
 
-### First, what is dropbox? :)
-Amazon has a free tier. You should be able to host it for 0$. :)
+# Task
+1. **Folder System:**
+   - Users can create, rename, and delete folders.
+   - Folders can have a hierarchical structure.
 
-Dropbox is a file hosting service operated by the American company Dropbox, Inc., headquartered in San Francisco, California, that offers cloud storage, file synchronization, personal cloud, and client software.
+2. **File Uploading:**
+   - Users can upload files to specific folders.
+   - Supported file types should include common document, image, and video formats.
 
-=> File synchronization, that sounds cool!
+3. **Sharing:**
+   - Users can share files or folders with others.
+   - Shared files/folders should be accessible to authorized users.
 
-### Secondly, what is serverless?
-Serverless computing is a method of providing backend services on an as-used basis. Servers are still used, but a company that gets backend services from a serverless vendor is charged based on usage, not a fixed amount of bandwidth or number of servers.
+4. **Deleting:**
+   - Users can delete files or folders, and deleted items are moved to a trash bin for recovery.
 
-=> We configure a backend at from a provider and it will handle the load/scaling for us.
+5. **Profile Updating:**
+   - Users can update their profile information, such as name, email, and profile picture.
 
-Let's implement a file synchronization using Amplify & Lambda & S3
+6. **Register and Login Pages:**
+   - Users can register for a new account with a valid email.
+   - Existing users can log in using their credentials.
 
-Example of architecture:
-<img src="https://storage.googleapis.com/qwasar-public/track-web/my_dropbox.jpeg"/>
+# Description
+This project is a Dropbox clone built using ReactJS for the frontend and Firebase for the backend. 
+It features a folder system, file uploading, sharing, deleting, and profile updating functionalities. 
+The application also includes user authentication with register and login pages, ensuring a secure and personalized experience for each user.
 
+# Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/dropbox-clone.git
+   ```
 
-You will have to code some lambda + a frontend app.
-ReactJS will be your techno!
+2. Navigate to the project directory:
+   ```bash
+   cd dropbox-clone
+   ```
 
-## SPECIFICATIONS
-User - authentification
-Upload a file
-Versioning
-DNS/Routing
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Set up Firebase:
+   - Create a Firebase project on the [Firebase Console](https://console.firebase.google.com/).
+   - Add a web app to your project and obtain the configuration details.
+   - Replace the Firebase configuration in the `src/config/firebase.js` file with your own configuration.
 
-## REQUIREMENTS
-A fully hosted version in the cloud. (at least until the correction happened)
+# Usage
+For run the codes:
+   ```bash
+   npm start
+   ```
+# Project Features
+1. **Register:**
+   - Navigate to the registration page.
+   - Provide a valid email and password to create a new account.
 
-The url of your project will be store inside the readme.
+2. **Login:**
+   - After registration, you can log in using your credentials on the login page.
 
-No more than 1 components per file.
-Additionals components will be in `src/components/`
+3. **Explore Dashboard:**
+   - Use the dashboard to create folders, upload files, and manage your content.
 
-CSS will be in a file associated to the component: css for ExampleComponent.js will be in ExampleComponent.css.
+4. **Share Files**
+   - Utilize the sharing functionality to collaborate with other users.
 
-Your Readme will have to describe the project.
-Your .gitignore must remove node_modules/
+5. **Update Profile:**
+   - Visit the profile section to update your personal information and profile picture.
 
-On the css/colors/design, you can be creative.
+6. **Delete Files:**
+   - Move unwanted files or folders to the trash bin for deletion.
+
+7. **Logout:**
+   - Log out to secure your account after usage.
